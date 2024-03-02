@@ -106,8 +106,8 @@ tr:hover {
 }
 
 /* Hide Date and Time Headers */
-th:nth-child(6),
-th:nth-child(7) {
+th:nth-child(7),
+th:nth-child(8) {
   display: none;
 }
 
@@ -121,14 +121,28 @@ td:nth-child(5) span {
   margin: 0 5px;
 }
 
-/* SearchBar */
 .search-bar {
   width: 300px;
-  height: 30px;
+  height: 40px;
   font-size: 16px;
   text-align: center;
   padding: 8px;
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 20px; /* Add rounded corners */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s ease; /* Add transition effect */
 }
+
+/* Add hover effect */
+.search-bar:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+/* Add focus effect */
+.search-bar:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
 
 /* Dropdown Container */
 .dropdown {
@@ -183,4 +197,30 @@ td:nth-child(5) span {
 /* Show Dropdown Content on Hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Styling for h1 */
+h1 {
+  font-size: 36px; /* Adjust font size */
+  font-weight: bold; /* Add bold font weight */
+  color: #007bff; /* Set text color */
+  text-align: center; /* Center align text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Add letter spacing */
+  font-family: cursive;
+  margin-bottom: 20px; /* Add bottom margin */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
+  animation: fadeInUp 0.5s ease-in-out; /* Add fade-in animation */
+}
+
+/* Animation effect for h1 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
